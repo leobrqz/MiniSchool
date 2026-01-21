@@ -1,6 +1,5 @@
 import unittest
-import psycopg2
-from escola import MiniEscolaApp, inicializar_banco
+from src.main import MiniEscolaApp, inicializar_banco
 import tkinter as tk
 
 class TestMiniEscola(unittest.TestCase):

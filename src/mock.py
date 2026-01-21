@@ -1,5 +1,4 @@
-import psycopg2
-from escola import inicializar_banco
+from main import inicializar_banco
 
 def inserir_dados_mock():
     # Conectar ao banco de dados

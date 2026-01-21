@@ -1,13 +1,22 @@
 import tkinter as tk
 from tkinter import ttk, messagebox
 import psycopg2
+import os
+from dotenv import load_dotenv
+
+# Carregar variáveis de ambiente do arquivo .env
+load_dotenv()
 
 # Conexão e inicialização do banco
 
 def inicializar_banco():
+    db_password = os.getenv('db_password')
+    if not db_password:
+        raise ValueError('db_password não encontrado no arquivo .env')
+    
     con = psycopg2.connect(
-        dbname='escola', user='postgres', password='quack', host='localhost'
-    )
+        dbname='escola', user='postgres', password=db_password, host='localhost',
+        client_encoding='UTF8')
     cur = con.cursor()
     cur.execute("""
         CREATE TABLE IF NOT EXISTS cursos (

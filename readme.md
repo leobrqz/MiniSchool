@@ -6,7 +6,7 @@ Sistema desktop desenvolvido em Python para gerenciamento de cursos, matérias, 
 
 - **Tkinter**: Framework para interface gráfica desktop
 - **PostgreSQL**: Banco de dados relacional
-- **Psycopg2**: Driver para conexão com PostgreSQL
+
 
 ## 🎯 Objetivos
 
@@ -15,7 +15,13 @@ Sistema desktop desenvolvido em Python para gerenciamento de cursos, matérias, 
 - Integrar um sistema de gestão completo que ofereça cadastro, edição e remoção de entidades
 - Suportar conexão com banco de dados PostgreSQL
 
-## Funcionalidades Principais
+## Funcionalidades
+
+<div align="center">
+  <img src="imgs/cursos.png" alt="Interface de Cursos" width="45%" />
+  <img src="imgs/notas.png" alt="Interface de Notas" width="45%" />
+</div>
+
 
 ### 🎨 Interface
 
